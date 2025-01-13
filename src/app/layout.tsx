@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { theme } from "@/theme/antd";
 import { OpenSansFonts } from "@/utils/customFonts";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
@@ -19,7 +21,11 @@ export default function RootLayout({
     <ConfigProvider theme={theme}>
       <html lang="en">
         <body className={`${OpenSansFonts.variable} font-OpenSans antialiased`}>
-          <AntdRegistry>{children}</AntdRegistry>
+          <AntdRegistry>
+            <Header />
+            {children}
+            <Footer />
+          </AntdRegistry>
         </body>
       </html>
     </ConfigProvider>
