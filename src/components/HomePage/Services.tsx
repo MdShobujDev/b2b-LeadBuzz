@@ -41,7 +41,7 @@ function Services() {
     },
     {
       id: 6,
-      title: "Cell Phone and Direct Phone",
+      title: "Cell Phone and Direct Phone Enrichment",
       icon: <FaPhoneVolume />,
       desc: "We Can Provide 100% Verified E-mail and Direct Phone Number List From Any Targeted -( Company, Niche, Industry, Title, Location, Keyword Related ) & Any phone number all premium tools, Zoominfo , Lusha , seamless and Kaspr",
     },
