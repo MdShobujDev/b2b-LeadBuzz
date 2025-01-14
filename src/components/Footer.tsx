@@ -82,7 +82,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-1">
                 <FaEnvelope />
-                info@dreamleadagency.com
+                info@b2bleadbuzz.com
               </li>
               <li className="flex gap-1">
                 <FaLocationDot />

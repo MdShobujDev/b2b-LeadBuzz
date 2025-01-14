@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <>
-      <div className="shadow sticky top-0 bg-white  z-50">
+      <div className="shadow sticky top-0 bg-white/70  z-50 backdrop-blur">
         {/* big screen nav bar  */}
         <nav className=" max-w-7xl mx-auto px-5  flex items-center justify-between gap-4 min-[950px]:py-0 py-3">
           <div>
@@ -38,7 +38,7 @@ function Header() {
                 <Link
                   href={item.link}
                   key={item.id}
-                  className={`group hover:text-indigo-700 px-3 hover:bg-indigo-50 py-5 transition-all duration-300 text-sm font-medium ${
+                  className={`group hover:text-indigo-700 px-3  py-5 transition-all duration-300 text-sm font-medium ${
                     pathname === item.link ? "text-indigo-700" : ""
                   }`}
                 >
@@ -65,9 +65,9 @@ function Header() {
         </nav>
       </div>
       {/* // small screen nav bar */}
-      <div className="min-[950px]:hidden block relative">
+      <div className="min-[950px]:hidden block relative z-50">
         <div
-          className={`flex flex-col gap-5 bg-gray-100 fixed pt-4  top-14 shadow ${
+          className={`flex flex-col gap-5 bg-gray-100/80 fixed pt-4 backdrop-blur top-14 shadow ${
             isToggole ? "left-0 right-0" : "-left-96"
           } transition-all duration-500 ease-out`}
         >
