@@ -17,7 +17,6 @@ function Header() {
     { id: 3, name: "Why Hire Us", link: "/why-hire-us" },
     { id: 4, name: "Pricing", link: "/pricing" },
     { id: 5, name: "About", link: "/about-us" },
-    { id: 6, name: "Contact", link: "/contact-us" },
   ];
   const pathname = usePathname();
   console.log(pathname);
@@ -51,8 +50,8 @@ function Header() {
                 </Link>
               ))}
             </div>
-            <div className="bg-black text-white font-medium text-xs cursor-pointer p-3 rounded hover:bg-indigo-700 transition-all duration-300">
-              <Link href={"/"}>GET 50 FOR FREE</Link>
+            <div className="bg-rose-500 text-white font-medium text-xs cursor-pointer p-3 rounded hover:bg-rose-600 transition-all duration-300">
+              <Link href={"/contact"}>CONTACT US</Link>
             </div>
           </div>
           {/* toggole button  */}
@@ -90,8 +89,8 @@ function Header() {
               </Link>
             ))}
           </div>
-          <div className="bg-black mx-5 mb-3 text-white font-medium text-xs cursor-pointer p-3 rounded hover:bg-indigo-700 transition-all duration-300 text-center">
-            <Link href={"/"}>GET 50 FOR FREE</Link>
+          <div className="bg-rose-500 mx-5 mb-3 text-white font-medium text-xs cursor-pointer p-3 rounded hover:bg-rose-600 transition-all duration-300 text-center">
+            <Link href="/contact">CONTACT US</Link>
           </div>
         </div>
       </div>

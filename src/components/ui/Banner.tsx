@@ -4,7 +4,7 @@ import Link from "next/link";
 import MangnetMan from "@/../public/images/Homepage/magnet-man.svg";
 import SittingPerson from "@/../public/images/Homepage/sitting-person.svg";
 
-const HomeContact = () => {
+const Banner = () => {
   return (
     <section
       className=" h-[60vh]"
@@ -35,4 +35,4 @@ const HomeContact = () => {
   );
 };
 
-export default HomeContact;
+export default Banner;

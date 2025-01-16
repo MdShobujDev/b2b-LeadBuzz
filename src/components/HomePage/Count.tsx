@@ -14,26 +14,50 @@ function Count() {
           <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center content-between gap-10">
             <div className="flex flex-col items-center">
               <h2 className="text-4xl font-bold">
-                <CountUp end={1.2} scrollSpyOnce duration={5} decimals={1} />
-                K+
+                <CountUp
+                  end={1.2}
+                  suffix="K+"
+                  scrollSpyOnce
+                  enableScrollSpy
+                  duration={5}
+                  decimals={1}
+                />
               </h2>
               <p className="text-gray-300">Projects Done</p>
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-4xl font-bold">
-                <CountUp end={100} scrollSpyOnce duration={5} />+
+                <CountUp
+                  end={100}
+                  scrollSpyOnce
+                  enableScrollSpy
+                  duration={5}
+                  suffix="+"
+                />
               </h2>
               <p className="text-gray-300">Happy Clients</p>
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-4xl font-bold">
-                <CountUp end={4.9} scrollSpyOnce duration={5} decimals={1} />
+                <CountUp
+                  end={4.9}
+                  scrollSpyOnce
+                  enableScrollSpy
+                  duration={5}
+                  decimals={1}
+                />
               </h2>
               <p className="text-gray-300">Client Rating</p>
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-4xl font-bold">
-                <CountUp end={6} scrollSpyOnce duration={5} />+
+                <CountUp
+                  end={6}
+                  scrollSpyOnce
+                  enableScrollSpy
+                  duration={5}
+                  suffix="+"
+                />
               </h2>
               <p className="text-gray-300">Years of Experience</p>
             </div>

@@ -92,7 +92,7 @@ function Reviews() {
                   </div>
                 </div>
                 <p className=" text-sm  text-gray-500 italic mt-2">
-                  {item.review}
+                  &ldquo; {item.review} &rdquo;
                 </p>
               </div>
             ))}
