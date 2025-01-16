@@ -1,7 +1,11 @@
 import BackgroundImage from "@/../public/images/Homepage/dots.png";
 import Link from "next/link";
 
-const Hero = ({ title, description }: any) => {
+interface HeroProps {
+  title: string;
+  description: string;
+}
+const Hero = ({ title, description }: HeroProps) => {
   return (
     <section
       className="bg-center bg-no-repeat bg-cover h-[70vh]"
