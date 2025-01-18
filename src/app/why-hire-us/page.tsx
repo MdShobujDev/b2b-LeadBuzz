@@ -1,4 +1,6 @@
+import Banner from "@/components/ui/Banner";
 import Hero from "@/components/ui/Hero";
+import WhyHireUsCom from "@/components/WhyHireUsCom";
 
 const data = {
   title: `Why Choose Us for Your B2B Lead Generation Needs?`,
@@ -9,6 +11,10 @@ const WhyHireUs = () => {
   return (
     <section>
       <Hero title={data.title} description={data.description} />
+      <div className="pb-0 min-[450px]:pb-20">
+        <WhyHireUsCom />
+      </div>
+      <Banner />
     </section>
   );
 };

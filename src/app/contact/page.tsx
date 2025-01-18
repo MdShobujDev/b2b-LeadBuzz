@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/ui/Hero";
 
 const data = {
@@ -9,6 +10,7 @@ const Contact = () => {
   return (
     <section>
       <Hero title={data.title} description={data.description} />
+      <ContactForm />
     </section>
   );
 };
