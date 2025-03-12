@@ -1,4 +1,5 @@
 "use client";
+import Elon from "@/../public/elon.jpg";
 import star from "@/../public/star.png";
 import Image from "next/image";
 const clients = [
@@ -63,7 +64,7 @@ function Reviews() {
         {clients.map((i) => (
           <div
             key={i.id}
-            className="group border p-7 flex flex-col gap-3 relative"
+            className="group shadow bg-white border-2 border-transparent hover:border-purple-700 p-6 md:p-10 rounded-lg transition duration-300 ease-linear hover:shadow-xl hover:-translate-y-1"
           >
             <svg
               data-v-922fb0dd=""
@@ -86,7 +87,15 @@ function Reviews() {
               ></path>
             </svg>
             <div className=" flex gap-3 sm:gap-5">
-              <div className=" w-12 h-12 border bg-gray-300 rounded-full overflow-hidden"></div>
+              <div className=" w-12 h-12  bg-gray-300 rounded-full overflow-hidden flex items-center justify-center ring-2 ring-purple-700">
+                <Image
+                  src={Elon}
+                  alt=""
+                  className=" object-cover w-12 h-12"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <div>
                 <h2 className=" text-base sm:text-xl font-medium">{i.name}</h2>
                 <div className=" flex">
@@ -98,7 +107,7 @@ function Reviews() {
                 </div>
               </div>
             </div>
-            <p className=" text-xs sm:text-sm">{i.review}</p>
+            <p className=" text-xs sm:text-sm mt-3">{i.review}</p>
           </div>
         ))}
       </div>
