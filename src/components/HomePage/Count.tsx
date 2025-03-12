@@ -3,17 +3,12 @@ import CountUp from "react-countup";
 
 function Count() {
   return (
-    <section
-      style={{
-        backgroundImage:
-          "linear-gradient(-45deg, #43BD82 0%, #008189 38%, #09299C 100%)",
-      }}
-    >
+    <section>
       <div>
-        <div className="max-w-7xl mx-auto px-12 py-20 text-white">
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center content-between gap-10">
-            <div className="flex flex-col items-center">
-              <h2 className="text-4xl font-bold">
+        <div className="max-w-7xl mx-auto px-12 py-10 text-purple-900">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center content-between gap-5">
+            <div className="flex flex-col items-center bg-purple-50 py-8 rounded">
+              <h2 className="sm:text-4xl text-3xl font-bold">
                 <CountUp
                   end={1.2}
                   suffix="K+"
@@ -23,10 +18,10 @@ function Count() {
                   decimals={1}
                 />
               </h2>
-              <p className="text-gray-300">Projects Done</p>
+              <p className="sm:text-base text-sm">Projects Done</p>
             </div>
-            <div className="flex flex-col items-center">
-              <h2 className="text-4xl font-bold">
+            <div className="flex flex-col items-center bg-purple-50 py-8 rounded">
+              <h2 className="sm:text-4xl text-3xl font-bold">
                 <CountUp
                   end={100}
                   scrollSpyOnce
@@ -35,10 +30,10 @@ function Count() {
                   suffix="+"
                 />
               </h2>
-              <p className="text-gray-300">Happy Clients</p>
+              <p className="sm:text-base text-sm">Happy Clients</p>
             </div>
-            <div className="flex flex-col items-center">
-              <h2 className="text-4xl font-bold">
+            <div className="flex flex-col items-center bg-purple-50 py-8 rounded">
+              <h2 className="sm:text-4xl text-3xl font-bold">
                 <CountUp
                   end={4.9}
                   scrollSpyOnce
@@ -47,10 +42,10 @@ function Count() {
                   decimals={1}
                 />
               </h2>
-              <p className="text-gray-300">Client Rating</p>
+              <p className="sm:text-base text-sm">Client Rating</p>
             </div>
-            <div className="flex flex-col items-center">
-              <h2 className="text-4xl font-bold">
+            <div className="flex flex-col items-center bg-purple-50 py-8 rounded">
+              <h2 className="sm:text-4xl text-3xl font-bold">
                 <CountUp
                   end={6}
                   scrollSpyOnce
@@ -59,7 +54,7 @@ function Count() {
                   suffix="+"
                 />
               </h2>
-              <p className="text-gray-300">Years of Experience</p>
+              <p className="sm:text-base text-sm">Years of Experience</p>
             </div>
           </div>
         </div>

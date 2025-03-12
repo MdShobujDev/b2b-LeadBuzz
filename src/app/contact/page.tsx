@@ -9,8 +9,13 @@ const data = {
 const Contact = () => {
   return (
     <section>
-      <Hero title={data.title} description={data.description} />
+      <Hero
+        title={data.title}
+        description={data.description}
+        contactBTN={false}
+      />
       <ContactForm />
+      
     </section>
   );
 };

@@ -10,7 +10,7 @@ const Banner = () => {
       className=" h-[60vh]"
       style={{
         backgroundImage:
-          "linear-gradient(-45deg, #43BD82 0%, #008189 38%, #09299C 100%)",
+          "linear-gradient(-45deg, #C6426E 0%, #642B73 38%, #333399 100%)",
       }}
     >
       <div className=" relative max-w-7xl mx-auto px-5 flex flex-col items-center justify-center h-full gap-5">

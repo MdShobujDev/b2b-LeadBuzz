@@ -1,22 +1,17 @@
 "use client";
-import { FaStar } from "react-icons/fa6";
-import EmblaCarousel from "../ui/EmblaCarouse";
-
+import star from "@/../public/star.png";
+import Image from "next/image";
 const clients = [
   {
     id: 1,
     name: "Jone Doe",
-    start: "5",
-    date: "4 Feb, 2024",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
+      "Instant B2B Service helped us to approach the new clients. They are really fast delivered with high-quality. Very communicative, having kuge skilled on Contact List Building.",
     photo: "",
   },
   {
     id: 2,
     name: "Jone Smit",
-    start: "5",
-    date: "3 Feb, 2022",
     review:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
     photo: "",
@@ -24,8 +19,7 @@ const clients = [
   {
     id: 3,
     name: "Mike Dso",
-    start: "5",
-    date: "4 Feb, 2024",
+
     review:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
     photo: "",
@@ -33,8 +27,7 @@ const clients = [
   {
     id: 4,
     name: "Loe Paw",
-    start: "5",
-    date: "4 Feb, 2024",
+
     review:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
     photo: "",
@@ -42,8 +35,13 @@ const clients = [
   {
     id: 5,
     name: "Sumit Leo",
-    start: "5",
-    date: "4 Feb, 2024",
+    review:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
+    photo: "",
+  },
+  {
+    id: 6,
+    name: "Navin Kala",
     review:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
     photo: "",
@@ -52,52 +50,57 @@ const clients = [
 
 function Reviews() {
   return (
-    <section className=" bg-gray-100 py-20">
-      <div className=" max-w-7xl mx-auto overflow-hidden flex min-[950px]:flex-row flex-col px-5 py-8 gap-5 ">
-        <div className=" flex flex-col items-center ">
-          <h1 className=" text-3xl font-medium">
-            Over 1,000 Businesses Trust <strong>B2BLeadBuzz</strong> for
-            Unmatched B2B Lead Generation Solutions
-          </h1>
-          <p className=" text-xs mt-2 text-gray-700">
-            <strong>B2BLeadBuzz</strong> is a trusted B2B lead generation
-            partner, empowering over 1,000 businesses worldwide. Our dedicated
-            team is available 24/7 to deliver tailored strategies and
-            data-driven solutions to help you achieve your sales and marketing
-            goals.
-          </p>
-        </div>
-        {/* Reviews section  */}
-        <div className=" min-[950px]:w-2/5 w-full">
-          <EmblaCarousel>
-            {clients.map((item) => (
-              <div
-                key={item.id}
-                className=" w-full min-[950px]:flex-[0_0_85%] min-[600px]:flex-[0_0_60%] flex-[0_0_90%] rounded-md bg-white p-4 select-none"
-              >
-                <div className=" flex items-start justify-between">
-                  <div className=" flex items-start gap-2">
-                    <div className=" bg-gray-300 w-14 h-14 rounded-full"></div>
-                    <div>
-                      <h2 className=" font-medium">{item.name}</h2>
-                      <p className=" text-xs font-medium">{item.date}</p>
-                    </div>
-                  </div>
-                  <div className=" flex items-center gap-2 text-orange-400">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
+    <section className="sm:pb-20 pb-10 max-w-7xl mx-auto px-5">
+      <div className=" flex flex-col items-center text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-purple-800">
+          Users sharing their experience
+        </h1>
+        <p className="sm:text-base text-sm text-gray-600 mt-2">
+          Real Stories, Real Success: Hear from Our Satisfied Clients
+        </p>
+      </div>
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-8">
+        {clients.map((i) => (
+          <div
+            key={i.id}
+            className="group border p-7 flex flex-col gap-3 relative"
+          >
+            <svg
+              data-v-922fb0dd=""
+              className="w-5 sm:w-6 absolute right-5 top-5 group-hover:block hidden"
+              viewBox="0 0 62 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                data-v-922fb0dd=""
+                opacity="0.1"
+                d="M36.8281 0H62.0001V25.315L51.906 45.5975H39.358L49.4015 25.315H36.8281V0Z"
+                fill="#5b268f"
+              ></path>
+              <path
+                data-v-922fb0dd=""
+                opacity="0.1"
+                d="M0 0H24.8838V25.5385L14.9053 46H2.50088L12.4294 25.5385H0V0Z"
+                fill="#5b268f"
+              ></path>
+            </svg>
+            <div className=" flex gap-3 sm:gap-5">
+              <div className=" w-12 h-12 border bg-gray-300 rounded-full overflow-hidden"></div>
+              <div>
+                <h2 className=" text-base sm:text-xl font-medium">{i.name}</h2>
+                <div className=" flex">
+                  <Image src={star} alt="star" width={18} />
+                  <Image src={star} alt="star" width={18} />
+                  <Image src={star} alt="star" width={18} />
+                  <Image src={star} alt="star" width={18} />
+                  <Image src={star} alt="star" width={18} />
                 </div>
-                <p className=" text-sm  text-gray-500 italic mt-2">
-                  &ldquo; {item.review} &rdquo;
-                </p>
               </div>
-            ))}
-          </EmblaCarousel>
-        </div>
+            </div>
+            <p className=" text-xs sm:text-sm">{i.review}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

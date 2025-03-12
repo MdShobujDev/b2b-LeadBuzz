@@ -4,8 +4,9 @@ import Link from "next/link";
 interface HeroProps {
   title: string;
   description: string;
+  contactBTN?: boolean;
 }
-const Hero = ({ title, description }: HeroProps) => {
+const Hero = ({ title, description, contactBTN = true }: HeroProps) => {
   return (
     <section
       className="bg-center bg-no-repeat bg-cover h-[70vh]"
@@ -17,7 +18,7 @@ const Hero = ({ title, description }: HeroProps) => {
         className=" h-full"
         style={{
           backgroundImage:
-            "linear-gradient(-45deg, #43BD82 0%, #008189 38%, #09299C 100%)",
+            "linear-gradient(-45deg, #C6426E 0%, #642B73 38%, #333399 100%)",
         }}
       >
         <div className=" max-w-7xl mx-auto px-5 flex flex-col text-white items-center justify-center text-center h-full ">
@@ -26,12 +27,14 @@ const Hero = ({ title, description }: HeroProps) => {
             {description}
           </p>
           <div className=" mt-8 flex gap-3 items-center justify-center ">
-            <Link
-              href="/contact"
-              className=" bg-rose-500 text-white px-4 py-2 rounded-md font-medium cursor-pointer hover:bg-rose-600 transition-all"
-            >
-              CONTACT US
-            </Link>
+            {contactBTN && (
+              <Link
+                href="/contact"
+                className=" bg-rose-500 text-white px-4 py-2 rounded-md font-medium cursor-pointer hover:bg-rose-600 transition-all"
+              >
+                CONTACT US
+              </Link>
+            )}
             <Link
               href="/"
               className=" bg-[#1DBF73] text-white px-4 py-2 rounded-md font-medium cursor-pointer hover:bg-[#18a865] transition-all"

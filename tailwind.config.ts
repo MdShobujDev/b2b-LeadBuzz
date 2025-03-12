@@ -7,11 +7,7 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        OpenSans: ["var(--font-OpenSans)"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 } satisfies Config;

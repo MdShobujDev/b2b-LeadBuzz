@@ -47,9 +47,11 @@ function Services() {
     },
   ];
   return (
-    <section className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-5 py-14 ">
-        <h1 className="text-4xl text-center font-medium mb-8">Our Services</h1>
+    <section id="services" className="bg-gray-50">
+      <div className="max-w-7xl mx-auto px-5 pb-14 pt-24 ">
+        <h1 className="text-4xl text-center font-medium mb-8 text-[#392d69]">
+          Our Services
+        </h1>
         <div className="grid min-[900px]:grid-cols-3 min-[550px]:grid-cols-2 grid-cols-1 gap-3">
           {servicesItems.map((item) => (
             <Link
