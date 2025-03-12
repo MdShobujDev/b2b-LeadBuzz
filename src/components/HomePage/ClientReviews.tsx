@@ -51,7 +51,7 @@ const clients = [
 
 function Reviews() {
   return (
-    <section className="sm:pb-20 pb-10 max-w-7xl mx-auto px-5">
+    <section className=" max-w-7xl mx-auto px-5">
       <div className=" flex flex-col items-center text-center">
         <h1 className="text-2xl sm:text-3xl font-bold text-purple-800">
           Users sharing their experience

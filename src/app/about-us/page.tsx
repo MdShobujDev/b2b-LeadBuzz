@@ -1,6 +1,7 @@
 import AboutAgency from "@/components/AboutPage/AboutAgency";
-import Banner from "@/components/ui/Banner";
+import Loading from "@/components/Loading";
 import Hero from "@/components/ui/Hero";
+import { Suspense } from "react";
 
 const data = {
   title: `Your Trusted Partner in B2B Lead Generation Excellence.`,
@@ -9,11 +10,12 @@ const data = {
 
 const About = () => {
   return (
-    <section>
-      <Hero title={data.title} description={data.description} />
-      <AboutAgency />
-      <Banner />
-    </section>
+    <Suspense fallback={<Loading />}>
+      <section>
+        <Hero title={data.title} description={data.description} />
+        <AboutAgency />
+      </section>
+    </Suspense>
   );
 };
 

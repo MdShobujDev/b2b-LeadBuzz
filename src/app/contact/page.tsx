@@ -1,5 +1,7 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/HomePage/ContactForm";
+import Loading from "@/components/Loading";
 import Hero from "@/components/ui/Hero";
+import { Suspense } from "react";
 
 const data = {
   title: `Let's Connect and Drive Your Business Forward Together.`,
@@ -8,15 +10,16 @@ const data = {
 
 const Contact = () => {
   return (
-    <section>
-      <Hero
-        title={data.title}
-        description={data.description}
-        contactBTN={false}
-      />
-      <ContactForm />
-      
-    </section>
+    <Suspense fallback={<Loading />}>
+      <section>
+        <Hero
+          title={data.title}
+          description={data.description}
+          contactBTN={false}
+        />
+        <ContactForm />
+      </section>
+    </Suspense>
   );
 };
 

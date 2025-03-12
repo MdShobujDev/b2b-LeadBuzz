@@ -8,7 +8,7 @@ const AboutAgency = () => {
     <section className=" max-w-7xl mx-auto px-5 my-10">
       {/* title and description  */}
       <div className=" text-center">
-        <h1 className=" text-3xl font-medium">
+        <h1 className=" text-2xl sm:text-3xl font-bold text-purple-700">
           Who We Are: Experts in B2B Lead Generation
         </h1>
         <p className=" text-sm text-gray-600">
@@ -21,10 +21,13 @@ const AboutAgency = () => {
         {/* Effortlessly Scale with Cloud Hosting  */}
         <div className=" flex gap-5 flex-col min-[800px]:flex-row">
           <div className="bg-cyan-100 rounded-md p-10 w-full flex flex-col gap-3">
-            <h1 className=" text-2xl font-bold mb-1">About Us</h1>
+            <h1 className=" text-2xl font-bold mb-1 text-purple-700">
+              About Us
+            </h1>
             <p className=" text-sm">
-              At <span className=" font-bold">B2B Lead Buzz</span>, we
-              specialize in turning your business goals into reality by
+              At{" "}
+              <span className=" font-bold text-purple-700">B2B Lead Bazz</span>,
+              we specialize in turning your business goals into reality by
               connecting you with high-quality leads that drive growth. As a
               premier B2B lead generation agency, we understand that every
               business is unique, and so are its needs. That’s why we focus on
@@ -48,7 +51,7 @@ const AboutAgency = () => {
               long-term partnerships that empower your business to thrive.
             </p>
 
-            <h3 className=" text-lg font-medium">
+            <h3 className=" text-lg font-medium text-purple-700">
               Dream big, and let us lead the way.
             </h3>
           </div>
@@ -63,19 +66,20 @@ const AboutAgency = () => {
             <Image src={support} alt="support" width={500} height={500} />
           </div>
           <div className=" bg-emerald-100 rounded-md p-10 w-full flex flex-col gap-3">
-            <h1 className=" text-2xl font-bold mb-1">
+            <h1 className=" text-2xl font-bold text-purple-700 mb-1">
               Comprehensive Support for Your B2B Lead Generation Success
             </h1>
             <p className=" text-sm">
-              At <span className=" font-bold">B2B Lead Buzz</span>, we offer
-              comprehensive support throughout your lead generation journey. Our
-              dedicated team ensures that every step of the process, from
-              strategy development to lead qualification, aligns with your
-              business goals. We provide ongoing guidance, insights, and
-              optimization to continuously improve your lead quality, conversion
-              rates, and return on investment. With our expertise and support,
-              you can focus on what matters most—converting leads into long-term
-              business relationships.
+              At{" "}
+              <span className=" font-bold text-purple-700">B2B Lead Bazz</span>,
+              we offer comprehensive support throughout your lead generation
+              journey. Our dedicated team ensures that every step of the
+              process, from strategy development to lead qualification, aligns
+              with your business goals. We provide ongoing guidance, insights,
+              and optimization to continuously improve your lead quality,
+              conversion rates, and return on investment. With our expertise and
+              support, you can focus on what matters most—converting leads into
+              long-term business relationships.
             </p>
           </div>
         </div>
@@ -83,22 +87,27 @@ const AboutAgency = () => {
         {/* Power Your Website with Reliable Web Hosting */}
         <div className=" flex gap-5 flex-col min-[800px]:flex-row">
           <div className=" bg-indigo-100 rounded-md p-10 w-full flex flex-col gap-3">
-            <h1 className=" text-2xl font-bold mb-1">Our Mission and Vision</h1>
+            <h1 className=" text-2xl font-bold mb-1 text-purple-700">
+              Our Mission and Vision
+            </h1>
             <div>
-              <h4 className=" font-bold text-lg">Mission</h4>
+              <h4 className=" font-bold text-lg text-purple-700">Mission:</h4>
               <p className=" text-sm">
-                At <span className=" font-bold">B2B Lead Buzz</span>, our
-                mission is to empower businesses by connecting them with the
-                right opportunities for growth. We strive to deliver innovative
-                and effective B2B lead generation solutions that drive
-                meaningful results for our clients. Our goal is to build lasting
-                partnerships through trust, transparency, and a relentless focus
-                on quality, helping businesses of all sizes achieve their full
-                potential.
+                At{" "}
+                <span className=" font-bold text-purple-700">
+                  B2B Lead Bazz
+                </span>
+                , our mission is to empower businesses by connecting them with
+                the right opportunities for growth. We strive to deliver
+                innovative and effective B2B lead generation solutions that
+                drive meaningful results for our clients. Our goal is to build
+                lasting partnerships through trust, transparency, and a
+                relentless focus on quality, helping businesses of all sizes
+                achieve their full potential.
               </p>
             </div>
             <div>
-              <h4 className=" font-bold text-lg">Vision</h4>
+              <h4 className=" font-bold text-lg text-purple-700">Vision:</h4>
               <p className=" text-sm">
                 Our vision is to be the leading B2B lead generation agency,
                 recognized globally for our excellence in delivering

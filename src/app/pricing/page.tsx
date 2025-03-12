@@ -1,5 +1,4 @@
 import PricingCard from "@/components/PricingPage/PricingCard";
-import Banner from "@/components/ui/Banner";
 import Hero from "@/components/ui/Hero";
 
 const data = {
@@ -12,7 +11,6 @@ const Pricing = () => {
     <section>
       <Hero title={data.title} description={data.description} />
       <PricingCard />
-      <Banner />
     </section>
   );
 };

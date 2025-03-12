@@ -19,7 +19,7 @@ function Header() {
     { id: 3, name: "Why Hire Us", link: "/why-hire-us" },
     { id: 4, name: "Pricing", link: "/pricing" },
     { id: 5, name: "About", link: "/about-us" },
-    { id: 6, name: "Contact", link: "/contact" },
+    { id: 6, name: "Contact", link: "/#contact" },
   ];
   const pathname = usePathname();
   console.log(pathname);

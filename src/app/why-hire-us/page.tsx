@@ -1,4 +1,3 @@
-import Banner from "@/components/ui/Banner";
 import Hero from "@/components/ui/Hero";
 import WhyHireUsCom from "@/components/WhyHireUsCom";
 
@@ -14,7 +13,6 @@ const WhyHireUs = () => {
       <div className="pb-0 min-[450px]:pb-20">
         <WhyHireUsCom />
       </div>
-      <Banner />
     </section>
   );
 };

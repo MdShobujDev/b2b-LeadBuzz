@@ -1,59 +1,83 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const cardItems = [
   {
     id: 1,
-    label: "Starter",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: "20",
-    includedSearvices: ["10 users", "2GB of storage", "Email support"],
-    excludedSearvices: [
-      "Help center access",
-      "Phone support",
-      "Community access",
+    label: "Lead Generation",
+    title: "Boost Your B2B & B2C Leads & Grow Your Business! 🚀",
+    price: "0.5",
+    includedSearvices: [
+      "Person Name",
+      "Company Name",
+      "Website",
+      "Job Role",
+      "Email",
+      "Contact Number",
+      "Contact Address",
+      "Social Media",
+      "Current Comapny Name",
+      "Comapny Address",
     ],
+    excludedSearvices: [],
   },
   {
     id: 2,
-    label: "Pro",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: "30",
+    label: "Ecommerce Lead",
+    title: "Drive More Sales with Ecommerce Lead Generation! 🛒🚀",
+    price: "0.2",
     includedSearvices: [
-      "20 users",
-      "3GB of storage",
-      "Email support",
-      "Help center access",
+      "Ecommerce Platform",
+      "Technology Used",
+      "Store Name",
+      "Website",
+      "Contact Name",
+      "Job Role",
+      "linkedin Address",
+      "Google Ads Check",
+      "Monthly Visitors Check",
     ],
-    excludedSearvices: ["Phone support", "Community access"],
+    excludedSearvices: [],
   },
   {
     id: 3,
-    label: "Enterprise",
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: "50",
+    label: "Influencer Lead",
+    title: "Power Your Brand with Influencer Lead Generation! 🌟🚀",
+    price: "0.2",
     includedSearvices: [
-      "10 users",
-      "2GB of storage",
-      "Email support",
-      "Help center access",
-      "Phone support",
-      "Community access",
+      "Influencer Niche",
+      "influencer Name",
+      "Contact Details",
+      "Social Media",
+      "Number of Followers",
+      "Engagement Rate",
+      "Average Like",
+      "Location",
+      "Number",
     ],
     excludedSearvices: [],
   },
 ];
 
 const PricingCard = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/pricing/#pricing_card");
+    }, 300);
+  }, []);
   return (
-    <div className="max-w-7xl px-5 mx-auto  pt-10 pb-36">
-      <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]  gap-4 md:gap-8">
+    <div id="pricing_card" className="max-w-7xl px-5 mx-auto  pt-20 pb-36">
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]  gap-4 md:gap-5">
         {cardItems.map((item) => (
           <div
             key={item.id}
-            className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm"
+            className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm hover:border-purple-700"
           >
             <div className="p-6 sm:px-8">
-              <h2 className="text-lg font-medium text-gray-900">
+              <h2 className="text-lg  font-bold text-purple-700">
                 {item.label}
               </h2>
 
@@ -65,15 +89,15 @@ const PricingCard = () => {
                 </strong>
 
                 <span className="text-sm font-medium text-gray-700">
-                  /month
+                  /per Lead
                 </span>
               </p>
 
               <Link
-                className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                className="mt-4 block rounded border border-purple-700 bg-purple-700 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-purple-700 focus:outline-none focus:ring active:text-purple-700 transition-all sm:mt-6"
                 href="/contact"
               >
-                Get Started
+                Order Now
               </Link>
             </div>
 

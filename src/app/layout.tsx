@@ -1,11 +1,13 @@
 import BookCall from "@/components/BookCall";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Loading from "@/components/Loading";
 import { theme } from "@/theme/antd";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import "./index.css";
@@ -30,10 +32,12 @@ export default function RootLayout({
         <body className={`${poppins.className} antialiased relative`}>
           <AntdRegistry>
             <Toaster />
-            <Header />
-            <BookCall />
-            {children}
-            <Footer />
+            <Suspense fallback={<Loading />}>
+              <Header />
+              <BookCall />
+              {children}
+              <Footer />
+            </Suspense>
           </AntdRegistry>
         </body>
       </html>

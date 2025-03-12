@@ -6,6 +6,11 @@ const theme: ThemeConfig = {
     // borderRadius: 3,
     // fontFamily: "var(--font-hindSiliguri)",
   },
+  components: {
+    Spin: {
+      colorPrimary: "fff",
+    },
+  },
 };
 
 export { theme };

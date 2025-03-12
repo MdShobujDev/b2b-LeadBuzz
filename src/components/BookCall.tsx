@@ -41,7 +41,13 @@ const BookCall = () => {
           </button>
           {isLoading && (
             <div className="absolute inset-0 flex justify-center items-center bg-black">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-purple-800"></div>
+              <div className="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           )}
           <iframe
