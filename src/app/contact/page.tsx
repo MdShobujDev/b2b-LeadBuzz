@@ -12,11 +12,7 @@ const Contact = () => {
   return (
     <Suspense fallback={<Loading />}>
       <section>
-        <Hero
-          title={data.title}
-          description={data.description}
-          contactBTN={false}
-        />
+        <Hero title={data.title} description={data.description} />
         <ContactForm />
       </section>
     </Suspense>
