@@ -60,11 +60,11 @@ function Reviews() {
           Real Stories, Real Success: Hear from Our Satisfied Clients
         </p>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-8">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-8">
         {clients.map((i) => (
           <div
             key={i.id}
-            className="group shadow bg-white border-2 border-transparent hover:border-purple-700 p-6 md:p-10 rounded-lg transition duration-300 ease-linear hover:shadow-xl hover:-translate-y-1"
+            className="group shadow bg-white border-2 border-transparent hover:border-purple-700 p-7 md:p-10 rounded-lg transition duration-300 ease-linear hover:shadow-xl hover:-translate-y-1"
           >
             <svg
               data-v-922fb0dd=""

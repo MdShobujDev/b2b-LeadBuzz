@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { FiCalendar } from "react-icons/fi";
 import { HiOutlineXMark } from "react-icons/hi2";
 
@@ -15,11 +16,21 @@ const BookCall = () => {
     <>
       <button
         onClick={handleClick}
-        className=" fixed sm:bottom-10 bottom-5 z-30 sm:right-10 right-5 flex items-center gap-2 text-white bg-purple-800 p-4 rounded-2xl cursor-pointer"
+        className=" fixed sm:bottom-24 bottom-[60px]  z-30 sm:right-10 right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
       >
-        <FiCalendar size={20} />
-        <span>Book A Call</span>
+        <FiCalendar size={18} />
+        <span className=" sm:text-sm text-xs  font-medium">Book A Call</span>
       </button>
+      <a
+        href="https://wa.me/01309919260?text=Hello,%20I%20am%20interested%20in%20your%20services"
+        target="_blank"
+        className=" fixed sm:bottom-10 bottom-5 z-30 sm:right-10 right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
+      >
+        <FaWhatsapp size={18} />
+        <span className="  sm:text-sm text-xs  font-medium">
+          Chat on WhatsApp
+        </span>
+      </a>
       {isModalOpen && (
         <div className=" fixed z-40 w-screen h-screen top-14 bottom-0 left-0 right-0 bg-[#0F0F0F]">
           <button

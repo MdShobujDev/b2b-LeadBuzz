@@ -1,13 +1,10 @@
 import Logo from "@/../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaLocationDot,
-  FaSquareWhatsapp,
   FaTwitter,
 } from "react-icons/fa6";
 
@@ -95,22 +92,9 @@ function Footer() {
           <div>
             <h2 className="sm:text-lg mb-5 text-white">Contact Us</h2>
             <ul className="text-white sm:text-base text-sm font-light flex flex-col gap-1">
-              <li className="flex  items-center gap-1">
-                <FaPhone size={18} />
-                +88 01572994969
-              </li>
-              <li className="flex items-center gap-1">
-                <FaSquareWhatsapp size={18} />
-                +88 01572994969
-              </li>
-              <li className="flex items-center gap-1">
-                <FaEnvelope size={18} />
-                info@b2bleadbuzz.com
-              </li>
-              <li className="flex gap-1">
-                <FaLocationDot size={18} />
-                Kashiahata, Dhunat, Bogra, Zip 5841, <br /> Dhaka, Bangladesh
-              </li>
+              <li>+88 01572994969</li>
+              <li>info@b2bleadbazz.com</li>
+              <li>Kashiahata, Dhunat, Bogra, Zip 5841, Dhaka, Bangladesh</li>
             </ul>
           </div>
         </div>
