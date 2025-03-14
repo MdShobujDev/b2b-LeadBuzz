@@ -15,10 +15,10 @@ const NotFound = () => {
             className="mx-auto sm:w-80 w-64 animate-[float_3s_infinite] shadow-xl rounded-lg"
           />
           <h1 className="sm:text-7xl text-5xl font-extrabold text-purple-700 mt-6">
-            Looks Like You're Lost!
+            {" Looks Like You're Lost!"}
           </h1>
           <p className="sm:text-xl  text-gray-700 mt-2">
-            We can't seem to find the page you're looking for.
+            {" We can't seem to find the page you're looking for."}
           </p>
           <Link
             href="/"

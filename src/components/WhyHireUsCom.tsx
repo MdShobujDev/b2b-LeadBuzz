@@ -78,7 +78,7 @@ function WhyHireUsCom() {
     setTimeout(() => {
       router.push("/why-hire-us/#content");
     }, 300);
-  }, []);
+  }, [router]);
   return (
     <section>
       <div id="content" className="max-w-7xl mx-auto px-5 scroll-mt-16">
@@ -91,7 +91,7 @@ function WhyHireUsCom() {
         <div className=" mb-10">
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 mt-10">
             {items.map((i) => (
-              <div className="flex gap-4 items-start">
+              <div key={i.id} className="flex gap-4 items-start">
                 <span className="text-purple-700 bg-purple-500/10 p-3 rounded-full">
                   {i.icon}
                 </span>

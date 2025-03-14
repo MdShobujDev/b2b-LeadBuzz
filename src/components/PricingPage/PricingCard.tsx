@@ -67,7 +67,7 @@ const PricingCard = () => {
     setTimeout(() => {
       router.push("/pricing/#pricing_card");
     }, 300);
-  }, []);
+  }, [router]);
   return (
     <div
       id="pricing_card"
