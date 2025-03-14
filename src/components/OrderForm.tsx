@@ -47,24 +47,18 @@ export default function LeadOrderForm() {
     }));
   };
 
-  interface SubmitEvent extends React.FormEvent<HTMLFormElement> {}
-
-  interface OrderResponse {
-    ok: boolean;
-  }
-
-  const handleSubmit = (e: SubmitEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     startTransition(async () => {
       try {
-        const response: OrderResponse = await fetch("/api/order", {
+        const response = await fetch("/api/order", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...formData, totalPrice }),
         });
 
         if (response.ok) {
-          toast.success("Order placed successfully!");
+          toast.success("Order place successfully!");
           setFormData(initialFormdata);
         } else {
           toast.error("Failed to place order. Please try again.");
