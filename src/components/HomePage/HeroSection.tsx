@@ -58,12 +58,13 @@ const HeroSection = () => {
             >
               CONTACT US
             </Link>
-            <Link
-              href="/"
+            <a
+              href="https://www.fiverr.com/leadzahid"
+              target="_blank"
               className=" bg-[#392d69] text-white px-4 py-2 rounded-md font-medium cursor-pointer  transition-all sm:text-base text-xs"
             >
               HIRE US
-            </Link>
+            </a>
           </div>
         </div>
         <div className=" absolute left-0 -bottom-20 min-[450px]:block hidden">

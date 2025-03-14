@@ -51,12 +51,13 @@ const Hero = ({ title, description }: HeroProps) => {
           >
             CONTACT US
           </Link>
-          <Link
-            href="/"
+          <a
+            target="_blank"
+            href="https://www.fiverr.com/leadzahid"
             className="z-40 bg-[#392d69] text-white px-4 py-2 rounded-md font-medium cursor-pointer  transition-all sm:text-base text-xs"
           >
             HIRE US
-          </Link>
+          </a>
         </div>
       </div>
     </section>
