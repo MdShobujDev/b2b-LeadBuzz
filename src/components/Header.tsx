@@ -54,7 +54,7 @@ function Header() {
               ))}
             </div>
             <Link
-              href={"/contact"}
+              href={"/order"}
               className=" text-white font-medium text-xs cursor-pointer px-4 py-2.5 rounded  bg-[#392d69]"
             >
               GET 50 FREE
@@ -99,7 +99,7 @@ function Header() {
             ))}
           </div>
           <Link
-            href="/contact"
+            href="/order"
             className="bg-[#392d69] mx-5 mb-3 text-white font-medium text-xs cursor-pointer p-3 rounded border text-center"
           >
             GET 50 FREE

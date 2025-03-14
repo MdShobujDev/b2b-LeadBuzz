@@ -56,35 +56,59 @@ function Footer() {
           <div>
             <h2 className="sm:text-lg mb-5 text-white">Company</h2>
             <ul className="text-white sm:text-base text-sm font-light flex flex-col gap-1">
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
+              <Link
+                href={"/about-us"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
                 About Us
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
+              </Link>
+              <Link
+                href={"/#contact"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
                 Contact Us
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
+              </Link>
+              <Link
+                href={"/why-hire-us"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
                 Why Hire Us
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
-                Terms and Conditions
-              </li>
+              </Link>
+              <Link
+                href={"/portfolio"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
+                Portfolio
+              </Link>
             </ul>
           </div>
           <div>
             <h2 className="sm:text-lg mb-5 text-white">Explore</h2>
             <ul className="text-white sm:text-base text-sm font-light flex flex-col gap-1">
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
+              <Link
+                href={"/"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
+                Home
+              </Link>
+              <Link
+                href={"/#services"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
                 Our Services
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
+              </Link>
+              <Link
+                href={"/pricing"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
                 Pricing
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
-                Portfolio
-              </li>
-              <li className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2">
-                Our Team
-              </li>
+              </Link>
+              <Link
+                href={"/order"}
+                className="flex items-center cursor-pointer duration-200 ease-linear transition-all hover:translate-x-2"
+              >
+                Order Now
+              </Link>
             </ul>
           </div>
           <div>

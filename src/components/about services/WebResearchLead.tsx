@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaCheckCircle,
   FaClipboardList,
@@ -137,9 +138,14 @@ const WebResearchLead = () => {
           Get top-quality web research and lead generation services tailored to
           your business needs.
         </p>
-        <button className="mt-6 bg-[#7e22ce] hover:bg-purple-800 text-white px-6 py-3 rounded-lg text-lg font-semibold transition">
-          Contact Us
-        </button>
+        <div className=" mt-6">
+          <Link
+            href={"/order"}
+            className=" bg-[#7e22ce] hover:bg-purple-800 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+          >
+            Order Now
+          </Link>
+        </div>
       </div>
     </section>
   );

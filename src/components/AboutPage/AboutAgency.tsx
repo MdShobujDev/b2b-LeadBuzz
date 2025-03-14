@@ -13,7 +13,7 @@ const AboutAgency = () => {
     setTimeout(() => {
       router.push("/about-us/#about");
     }, 300);
-  }, []);
+  }, [router]);
   return (
     <section id="about" className=" max-w-7xl mx-auto px-5 my-10 scroll-mt-20">
       {/* title and description  */}

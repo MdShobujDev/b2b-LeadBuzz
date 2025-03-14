@@ -8,7 +8,7 @@ const data = {
   description: `Have questions or ready to get started? Our team is here to provide the answers and support you need. Reach out today, and let's explore how we can help your business grow with tailored B2B lead generation solutions.`,
 };
 
-const Contact = () => {
+const Order = () => {
   return (
     <Suspense fallback={<Loading />}>
       <section>
@@ -19,4 +19,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Order;

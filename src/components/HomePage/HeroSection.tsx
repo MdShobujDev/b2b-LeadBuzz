@@ -53,7 +53,7 @@ const HeroSection = () => {
           </p>
           <div className=" mt-5 flex gap-3 items-center justify-center">
             <Link
-              href="/"
+              href="/#contact"
               className=" bg-[#B17AEA] text-white px-4 py-2 rounded-md font-medium cursor-pointer  transition-all sm:text-base text-xs"
             >
               CONTACT US
