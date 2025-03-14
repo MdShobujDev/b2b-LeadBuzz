@@ -2,11 +2,6 @@ import Loading from "@/components/Loading";
 import LeadOrderForm from "@/components/OrderForm";
 import { Suspense } from "react";
 
-const data = {
-  title: `Let's Connect and Drive Your Business Forward Together.`,
-  description: `Have questions or ready to get started? Our team is here to provide the answers and support you need. Reach out today, and let's explore how we can help your business grow with tailored B2B lead generation solutions.`,
-};
-
 const Order = () => {
   return (
     <Suspense fallback={<Loading />}>
