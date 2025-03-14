@@ -27,43 +27,41 @@ export async function POST(request: Request) {
       subject: `New Contact Form Submission ${new Date().toDateString()}`,
       text: `First_Name: ${First_Name}\nLast_Name: ${Last_Name}\nEmail: ${Email}\Phone_Number: ${Phone_Number}\nMessage: ${Message}`,
       html: `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Form Submission</title>
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-        }
-        h3 {
-            color: #333;
-        }
-        p {
-            font-size: 16px;
-        }
-        strong {
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <h3>Contact Form Submission ${new Date().toLocaleString()}</h3>
-    <p><strong>First Name:</strong> ${First_Name}</p>
-    <p><strong>Last Name:</strong> ${Last_Name}</p>
-    <p><strong>Email:</strong> ${Email}</p>
-    <p><strong>Phone Number:</strong> ${Phone_Number}</p>
-    <p><strong>Message:</strong> ${Message}</p>
-</body>
-</html> 
+         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+      <div style="background: #007BFF; padding: 15px; text-align: center; border-radius: 10px 10px 0 0;">
+        <h2 style="color: #fff; margin: 0;">New Contact Form Submission</h2>
+      </div>
+      <div style="padding: 20px; background: #f9f9f9;">
+        <p style="color: #555;"><strong>Submission Date:</strong> ${new Date().toLocaleString()}</p>
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <td style="padding: 10px; font-weight: bold; width: 30%;">First Name:</td>
+            <td style="padding: 10px; background: #fff;">${First_Name}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; font-weight: bold;">Last Name:</td>
+            <td style="padding: 10px; background: #fff;">${Last_Name}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; font-weight: bold;">Email:</td>
+            <td style="padding: 10px; background: #fff;">
+              <a href="mailto:${Email}" style="color: #007BFF; text-decoration: none;">${Email}</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; font-weight: bold;">Phone Number:</td>
+            <td style="padding: 10px; background: #fff;">${Phone_Number}</td>
+          </tr>
+        </table>
+        <div style="margin-top: 20px;">
+          <p style="font-weight: bold;">Message:</p>
+          <p style="background: #fff; padding: 15px; border-left: 4px solid #007BFF; font-style: italic;">${Message}</p>
+        </div>
+      </div>
+      <div style="background: #007BFF; padding: 10px; text-align: center; border-radius: 0 0 10px 10px;">
+        <p style="color: #fff; margin: 0; font-size: 14px;">This is an automated email from your website.</p>
+      </div>
+    </div> 
       `,
     };
     // Send email via Nodemailer

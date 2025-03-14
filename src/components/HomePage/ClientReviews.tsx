@@ -1,51 +1,56 @@
 "use client";
-import Elon from "@/../public/elon.jpg";
+import adamkosloff from "@/../public/images/client/adamkosloff.jpg";
+import clmentgilly from "@/../public/images/client/clmentgilly.jpg";
+import damiencarrier from "@/../public/images/client/damiencarrier.jpg";
+import davidli16888 from "@/../public/images/client/davidli16888.jpg";
+import jonah_joy from "@/../public/images/client/jonah_joy.jpg";
+import theopascard from "@/../public/images/client/theopascard.jpg";
 import star from "@/../public/star.png";
 import Image from "next/image";
 const clients = [
   {
     id: 1,
-    name: "Jone Doe",
+    name: "Adamkosloff",
     review:
-      "Instant B2B Service helped us to approach the new clients. They are really fast delivered with high-quality. Very communicative, having kuge skilled on Contact List Building.",
-    photo: "",
+      "Once again, Lead Zahid delivers! Excited to test out this batch. Fingers crossed, we got a lot of connects, and then we can hopefully do this process on a more regular basis.",
+    photo: adamkosloff,
   },
   {
     id: 2,
-    name: "Jone Smit",
+    name: "Damiencarrier",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
-    photo: "",
+      "Zahid exceeded all expectations with his work on my project. His attention to detail, professionalism, and ability to follow instructions were exceptional. ",
+    photo: damiencarrier,
   },
   {
     id: 3,
-    name: "Mike Dso",
+    name: "Davidli",
 
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
-    photo: "",
+      "Once again, Zahid delivers the goods quickly and with very little guidance required. Thank you, and I'm excited to use your services again in the near future.",
+    photo: davidli16888,
   },
   {
     id: 4,
-    name: "Loe Paw",
+    name: "Theopascard",
 
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
-    photo: "",
+      "Zahid a fait du très bon travail, il est très professionnel et à l'écoute. Excellent rapport qualité - prix Je recommande.",
+    photo: theopascard,
   },
   {
     id: 5,
-    name: "Sumit Leo",
+    name: "Clmentgilly",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
-    photo: "",
+      "Super quick data scrapping of exactly what I needed. Using Zahid's services now 5 times! And will be more.",
+    photo: clmentgilly,
   },
   {
     id: 6,
-    name: "Navin Kala",
+    name: "Jonah joy",
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptate nostrum excepturi minima est debitis perferendis?",
-    photo: "",
+      "Thanks, Zahid--lightning fast delivery, and you went above and beyond what I asked for in the order. Excited to test these out, and we'll see how it goes. I hope to come back to you for research orders in the future.",
+    photo: jonah_joy,
   },
 ];
 
@@ -89,7 +94,7 @@ function Reviews() {
             <div className=" flex gap-3 sm:gap-5">
               <div className=" w-12 h-12  bg-gray-300 rounded-full overflow-hidden flex items-center justify-center ring-2 ring-purple-700">
                 <Image
-                  src={Elon}
+                  src={i.photo}
                   alt=""
                   className=" object-cover w-12 h-12"
                   width={200}

@@ -1,70 +1,109 @@
-import { FaCircleCheck } from "react-icons/fa6";
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import {
+  FaCheckCircle,
+  FaClipboardCheck,
+  FaClock,
+  FaDollarSign,
+  FaGift,
+  FaMoneyBillWave,
+  FaSearch,
+  FaTag,
+} from "react-icons/fa";
 
 const items = [
   {
     id: 1,
-    title: "Manual Lead Research",
-    desc: "Get manually researched & human verified current data in real time. No outdated, stale or pre-made data.",
+    title: "Manually Researched & Verified Leads",
+    description:
+      "Every lead is hand-picked and verified in real time, ensuring you get high-quality B2B data with 99% accuracy for better conversions and outreach success.",
+    icon: <FaSearch />,
   },
   {
     id: 2,
-    title: "Affordable Pricing Offers",
-    desc: "Affordable pricing offers. Save 30-50% list building cost than other vendors but get better quality data within 48 hours.",
+    title: "Affordable Pricing with High ROI",
+    description:
+      "Save 30-50% on lead generation costs while receiving premium, conversion-ready B2B leads. Get better quality data without overpaying like other vendors charge.",
+    icon: <FaDollarSign />,
   },
   {
     id: 3,
-    title: "100% Accuracy Leads.",
-    desc: "100% data accuracy with at least 97-98% email deliverability guarantee. You should pay for only valid leads.",
+    title: "99% Accurate Data, Less Than 1% Bounce Rate",
+    description:
+      "Receive verified B2B leads with a 99% accuracy guarantee and less than a 1% bounce rate, ensuring your outreach efforts are successful and efficient.",
+    icon: <FaCheckCircle />,
   },
   {
     id: 4,
-    title: "Get FREE 50 leads",
-    desc: "Get FREE leads for trying us depending on your specific search criteria. No SignUp or Credit Card needed.",
+    title: "50 Free Leads – No Signup Required!",
+    description:
+      "Try our service with 50 free leads, customized to your target audience. No signup, no payment—just high-quality leads for you to test first.",
+    icon: <FaGift />,
   },
   {
     id: 5,
-    title: "Order Now & Pay Later.",
-    desc: "Order now and Pay later. First get the lead list to check & review the quality & accuracy.",
+    title: "Order First, Pay Later",
+    description:
+      "Get your lead list first, review its quality, and pay only if you're satisfied. No risk, just premium B2B leads with total transparency.",
+    icon: <FaClipboardCheck />,
   },
   {
     id: 6,
-    title: "Save Your Time",
-    desc: "No extra stress, No boring work to match and identify leads. Save a few hours a day for your prospecting.",
+    title: "Save Time & Focus on Closing Deals",
+    description:
+      "No need to spend hours collecting data. I provide ready-to-use, sales-focused B2B leads so you can concentrate on conversions, not research.",
+    icon: <FaClock />,
   },
   {
     id: 7,
-    title: "Pay as Your Need",
-    desc: "No Yearly or Month Subscription fee! Order and Pay as your need. Get full freedom in your data research.",
+    title: "Pay As You Go – No Subscriptions",
+    description:
+      "No monthly fees or commitments! Order leads whenever you need them with full flexibility, perfect for startups, agencies, and growing businesses.",
+    icon: <FaMoneyBillWave />,
   },
   {
     id: 8,
-    title: "Get Discount",
-    desc: "Get 10% OFF when you place your re-order and 20% OFF If you bring a new customer for us.",
+    title: "Exclusive Discounts & Referral Benefits",
+    description:
+      "Get 10% OFF on reorders and 20% OFF when you refer a new client. Earn discounts while growing your business with high-quality leads.",
+    icon: <FaTag />,
   },
 ];
+
 function WhyHireUsCom() {
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/why-hire-us/#content");
+    }, 300);
+  }, []);
   return (
     <section>
-      <div className="max-w-7xl mx-auto px-5">
+      <div id="content" className="max-w-7xl mx-auto px-5 scroll-mt-16">
         <div className="text-center my-10">
-          <h1 className="text-4xl font-bold">Why Hire Us</h1>
+          <h1 className="sm:text-4xl text-3xl font-bold text-purple-700">
+            Why Hire Us
+          </h1>
           <p>8 Reasons that make us Premium and Friendly</p>
         </div>
-        <div className="grid min-[800px]:grid-cols-2 grid-cols-1 gap-3 mb-10">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="flex items-center gap-4 p-4 border rounded-md shadow hover:bg-gray-100 transition-all duration-150 ease-linear"
-            >
-              <div className="text-green-600 text-xl">
-                <FaCircleCheck />
+        <div className=" mb-10">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 mt-10">
+            {items.map((i) => (
+              <div className="flex gap-4 items-start">
+                <span className="text-purple-700 bg-purple-500/10 p-3 rounded-full">
+                  {i.icon}
+                </span>
+                <div>
+                  <h3 className="font-semibold sm:text-lg">{i.title}</h3>
+                  <p className="mt-1 text-gray-500 sm:text-base text-sm">
+                    {i.description}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h2 className="font-medium">{item.title}</h2>
-                <p>{item.desc}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

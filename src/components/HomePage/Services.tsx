@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaHeadset } from "react-icons/fa";
 import { FaDatabase, FaShop } from "react-icons/fa6";
 import { SiAnalogue } from "react-icons/si";
@@ -8,36 +9,42 @@ function Services() {
     {
       id: 1,
       title: "Lead Generation",
+      params: "Lead-Generation",
       icon: <FaDatabase />,
       desc: "Boost your outreach with our expert lead generation, contact list building, prospect list building, and email list building services",
     },
     {
       id: 2,
       title: "E-commerce leads",
+      params: "E-commerce-leads",
       icon: <FaShop />,
       desc: "Get high-quality eCommerce leads to grow your online store. We provide targeted leads, including potential customers, suppliers, and business partners, to help you drive sales and expand your market reach",
     },
     {
       id: 3,
       title: "Influencer Leads",
+      params: "Influencer-Leads",
       icon: <SiAnalogue />,
       desc: "Connect with the right influencers to boost your brand. We provide high-quality influencer leads tailored to your niche, helping you build successful collaborations and maximize your reach.",
     },
     {
       id: 4,
       title: "Data Enrichment",
+      params: "Data-Enrichment",
       icon: <TbDeviceAnalytics />,
       desc: "Enhance your database with our data enrichment services. We provide cell phone enrichment, missing data enrichment, email finding, and direct phone number sourcing to ensure accurate and complete contact information.",
     },
     {
       id: 5,
       title: "Virtual Assistant",
+      params: "Virtual-Assistant",
       icon: <FaHeadset />,
       desc: "I will be your reliable virtual assistant, providing data entry, copy-pasting, and web research services with accuracy and efficiency to support your business needs.",
     },
     {
       id: 6,
       title: "Web Research",
+      params: "Web-Research",
       icon: <TbWorldSearch />,
       desc: "Get accurate and in-depth insights with our web research services. We provide data collection, market analysis, and competitor research to help you make informed business decisions.",
     },
@@ -51,7 +58,8 @@ function Services() {
 
         <div className="grid min-[900px]:grid-cols-3 min-[550px]:grid-cols-2 grid-cols-1 gap-3">
           {servicesItems.map((item) => (
-            <div
+            <Link
+              href={`/services/${item.params}`}
               key={item.id}
               className="group shadow bg-white border-2 border-transparent hover:border-purple-700 p-6 md:p-10 rounded-lg transition duration-300 ease-linear hover:shadow-xl hover:-translate-y-1"
               data-v-922fb0dd=""
@@ -157,7 +165,7 @@ function Services() {
               >
                 {item.desc}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

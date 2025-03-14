@@ -1,5 +1,8 @@
+import Loading from "@/components/Loading";
+import ExtraCard from "@/components/PricingPage/ExtraCard";
 import PricingCard from "@/components/PricingPage/PricingCard";
 import Hero from "@/components/ui/Hero";
+import { Suspense } from "react";
 
 const data = {
   title: `Flexible Pricing for Results-Driven B2B Lead Generation.`,
@@ -8,10 +11,13 @@ const data = {
 
 const Pricing = () => {
   return (
-    <section>
-      <Hero title={data.title} description={data.description} />
-      <PricingCard />
-    </section>
+    <Suspense fallback={<Loading />}>
+      <section>
+        <Hero title={data.title} description={data.description} />
+        <PricingCard />
+        <ExtraCard />
+      </section>
+    </Suspense>
   );
 };
 

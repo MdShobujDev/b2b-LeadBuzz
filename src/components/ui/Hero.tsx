@@ -7,7 +7,7 @@ interface HeroProps {
 const Hero = ({ title, description }: HeroProps) => {
   return (
     <section
-      className="sm:h-[90vh] h-[80vh]  relative"
+      className="sm:h-[80vh] h-[65vh]  relative "
       style={{
         background:
           "linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%)",
@@ -42,7 +42,7 @@ const Hero = ({ title, description }: HeroProps) => {
         ></path>
       </svg>
       <div className="  max-w-7xl mx-auto px-5 flex flex-col text-white items-center justify-center text-center h-full ">
-        <h1 className="sm:text-5xl text-4xl font-bold">{title}</h1>
+        <h1 className="sm:text-5xl text-3xl font-bold">{title}</h1>
         <p className=" sm:text-sm text-xs mt-2 text-gray-100">{description}</p>
         <div className=" mt-8 flex gap-3 items-center justify-center ">
           <Link

@@ -1,5 +1,7 @@
+import Loading from "@/components/Loading";
 import Hero from "@/components/ui/Hero";
 import WhyHireUsCom from "@/components/WhyHireUsCom";
+import { Suspense } from "react";
 
 const data = {
   title: `Why Choose Us for Your B2B Lead Generation Needs?`,
@@ -8,12 +10,14 @@ const data = {
 
 const WhyHireUs = () => {
   return (
-    <section>
-      <Hero title={data.title} description={data.description} />
-      <div className="pb-0 min-[450px]:pb-20">
-        <WhyHireUsCom />
-      </div>
-    </section>
+    <Suspense fallback={<Loading />}>
+      <section>
+        <Hero title={data.title} description={data.description} />
+        <div className="pb-0 min-[450px]:pb-20">
+          <WhyHireUsCom />
+        </div>
+      </section>
+    </Suspense>
   );
 };
 

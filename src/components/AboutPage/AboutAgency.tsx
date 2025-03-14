@@ -1,11 +1,21 @@
+"use client";
 import about from "@/../public/images/Aboutpage/about.png";
 import mission from "@/../public/images/Aboutpage/mission.png";
 import support from "@/../public/images/Aboutpage/support.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const AboutAgency = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/about-us/#about");
+    }, 300);
+  }, []);
   return (
-    <section className=" max-w-7xl mx-auto px-5 my-10">
+    <section id="about" className=" max-w-7xl mx-auto px-5 my-10 scroll-mt-20">
       {/* title and description  */}
       <div className=" text-center">
         <h1 className=" text-2xl sm:text-3xl font-bold text-purple-700">

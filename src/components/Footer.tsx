@@ -1,5 +1,3 @@
-import Logo from "@/../public/logo.png";
-import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -18,8 +16,8 @@ function Footer() {
     >
       <div className="max-w-7xl mx-auto p-6 flex flex-col justify-between gap-10 min-[950px]:flex-row">
         <div className="flex-[1_1_40%] py-2">
-          <Link href={"/"}>
-            <Image src={Logo} alt="logo" width={180} />
+          <Link href={"/"} className=" text-2xl font-bold text-purple-200">
+            B2B LEADBAZZ
           </Link>
           <p className="text-white text-sm sm:text-base font-light mt-3">
             We help businesses to build high quality hand curated contact list
@@ -100,13 +98,26 @@ function Footer() {
         </div>
       </div>
       {/* bottom footer section  */}
-      <div className="border-t py-2  text-center">
-        <p className="text-white text-sm">
-          &copy; {new Date().getFullYear()} All rights reserved by{" "}
-          <Link href={"/"} className=" underline">
-            B2B LeadBazz
-          </Link>
-        </p>
+      <div className="border-t">
+        <div className=" py-2  text-center  flex items-center justify-between  px-5 sm:flex-row flex-col max-w-7xl mx-auto">
+          <div className=" flex text-white gap-1 text-sm ">
+            <p>Developed by</p>
+            <a
+              href="https://www.facebook.com/MdShobujDev"
+              target="_blank"
+              className=" underline hover:text-sky-400 transition-all"
+            >
+              Md Shobuj
+            </a>
+          </div>
+          <p className="text-white text-sm">
+            &copy; {new Date().getFullYear()} All rights reserved by{" "}
+            <Link href={"/"} className=" underline">
+              B2B LeadBazz
+            </Link>
+          </p>
+          <div></div>
+        </div>
       </div>
     </footer>
   );

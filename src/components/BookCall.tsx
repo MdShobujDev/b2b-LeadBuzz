@@ -16,15 +16,15 @@ const BookCall = () => {
     <>
       <button
         onClick={handleClick}
-        className=" fixed sm:bottom-24 bottom-[60px]  z-30 sm:right-10 right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
+        className=" fixed sm:bottom-14 bottom-12   z-30  right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
       >
         <FiCalendar size={18} />
         <span className=" sm:text-sm text-xs  font-medium">Book A Call</span>
       </button>
       <a
-        href="https://wa.me/01309919260?text=Hello,%20I%20am%20interested%20in%20your%20services"
+        href="https://wa.me/+8801309919260?text=Hello,%20I%20am%20interested%20in%20your%20services"
         target="_blank"
-        className=" fixed sm:bottom-10 bottom-5 z-30 sm:right-10 right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
+        className=" fixed bottom-1.5 z-30  right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
       >
         <FaWhatsapp size={18} />
         <span className="  sm:text-sm text-xs  font-medium">

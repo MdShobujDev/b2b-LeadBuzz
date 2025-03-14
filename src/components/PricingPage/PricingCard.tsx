@@ -69,7 +69,10 @@ const PricingCard = () => {
     }, 300);
   }, []);
   return (
-    <div id="pricing_card" className="max-w-7xl px-5 mx-auto  pt-20 pb-36">
+    <div
+      id="pricing_card"
+      className="max-w-7xl px-5 mx-auto  sm:pt-16 pt-10 pb-20 scroll-mt-10"
+    >
       <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]  gap-4 md:gap-5">
         {cardItems.map((item) => (
           <div
