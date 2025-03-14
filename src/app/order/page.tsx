@@ -1,6 +1,5 @@
-import ContactForm from "@/components/HomePage/ContactForm";
 import Loading from "@/components/Loading";
-import Hero from "@/components/ui/Hero";
+import LeadOrderForm from "@/components/OrderForm";
 import { Suspense } from "react";
 
 const data = {
@@ -11,9 +10,18 @@ const data = {
 const Order = () => {
   return (
     <Suspense fallback={<Loading />}>
-      <section>
-        <Hero title={data.title} description={data.description} />
-        <ContactForm />
+      <section className=" max-w-7xl mx-auto px-5 py-10">
+        <div className=" text-center">
+          <h2 className=" sm:text-4xl text-3xl font-bold text-purple-700">
+            Place Your Order Today
+          </h2>
+          <p className="sm:text-sm text-xs">
+            Experience Unmatched Quality & Convenience!
+          </p>
+        </div>
+        <div className=" mt-10">
+          <LeadOrderForm />
+        </div>
       </section>
     </Suspense>
   );
