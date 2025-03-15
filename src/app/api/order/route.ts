@@ -14,15 +14,7 @@ export async function POST(request: Request) {
       workDetails,
     } = body;
     // Validate the required fields
-    if (
-      !fullName ||
-      !phoneNumber ||
-      !email ||
-      !serviceType ||
-      !leadQuantity ||
-      !workDetails ||
-      !totalPrice
-    ) {
+    if (!fullName || !phoneNumber || !email) {
       return NextResponse.json(
         { message: "Missing required fields" },
         { status: 400 }

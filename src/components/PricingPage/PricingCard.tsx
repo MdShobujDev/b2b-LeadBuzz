@@ -98,7 +98,7 @@ const PricingCard = () => {
 
               <Link
                 className="mt-4 block rounded border border-purple-700 bg-purple-700 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-purple-700 focus:outline-none focus:ring active:text-purple-700 transition-all sm:mt-6"
-                href="/contact"
+                href="/order"
               >
                 Order Now
               </Link>
