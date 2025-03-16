@@ -13,11 +13,10 @@ type FormData = {
 
 const servicePrices: Record<string, number> = {
   free: 0,
-  "B2B Leads": 0.15,
-  "B2C Leads": 0.12,
-  "Ecommerce Lead": 0.18,
+  "B2B Leads": 0.25,
+  "Ecommerce Lead": 0.3,
   "Influencer Lead": 0.2,
-  Others: 0.1,
+  Others: 0.2,
 };
 
 const initialFormdata = {
