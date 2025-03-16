@@ -1,5 +1,7 @@
 "use client";
 
+import Logo from "@/../public/logo.png";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -34,8 +36,8 @@ function Header() {
         <nav className=" max-w-7xl mx-auto px-5  flex items-center justify-between gap-4 py-3">
           {/* company logo  */}
           <div>
-            <Link href={"/"} className=" text-xl font-bold text-purple-200">
-              B2B LEADBAZZ
+            <Link href={"/"}>
+              <Image src={Logo} alt="logo" width={170} />
             </Link>
           </div>
 

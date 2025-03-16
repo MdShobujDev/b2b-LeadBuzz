@@ -68,7 +68,7 @@ export async function POST(request: Request) {
 
             <!-- Contact Button -->
             <div style="text-align: center; margin-top: 20px;">
-                <a href="mailto:support@b2bleadbazz.com" style="background-color: #3D306D; color: #ffffff; padding: 12px 20px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; display: inline-block;">
+                <a href="mailto:info@b2bleadbazz.com" style="background-color: #3D306D; color: #ffffff; padding: 12px 20px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; display: inline-block;">
                     Contact Support
                 </a>
             </div>

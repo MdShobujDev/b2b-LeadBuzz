@@ -152,7 +152,7 @@ const ExtraCard = () => {
               </div>
               <div className=" flex  py-2 px-5 ">
                 <a
-                  href={`https://wa.me/+8801309919260?text=Hello,%20I%20am%20interested%20in%20your%20${item.title}%20services`}
+                  href={`https://wa.me/+8801732852745?text=Hello,%20I%20am%20interested%20in%20your%20${item.title}%20services`}
                   target="_blank"
                   className="text-center bg-purple-700 text-white p-2 w-full  rounded-md text-sm font-medium flex items-center justify-center gap-2 hover:bg-transparent border border-purple-800 hover:text-purple-800 transition-all duration-200 ease-linear"
                 >

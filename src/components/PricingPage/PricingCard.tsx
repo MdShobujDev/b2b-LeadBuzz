@@ -8,7 +8,7 @@ const cardItems = [
     id: 1,
     label: "Lead Generation",
     title: "Boost Your B2B & B2C Leads & Grow Your Business! 🚀",
-    price: "0.5",
+    price: "0.25",
     includedSearvices: [
       "Person Name",
       "Company Name",
@@ -27,7 +27,7 @@ const cardItems = [
     id: 2,
     label: "Ecommerce Lead",
     title: "Drive More Sales with Ecommerce Lead Generation! 🛒🚀",
-    price: "0.2",
+    price: "0.30",
     includedSearvices: [
       "Ecommerce Platform",
       "Technology Used",
@@ -45,7 +45,7 @@ const cardItems = [
     id: 3,
     label: "Influencer Lead",
     title: "Power Your Brand with Influencer Lead Generation! 🌟🚀",
-    price: "0.2",
+    price: "0.20",
     includedSearvices: [
       "Influencer Niche",
       "influencer Name",

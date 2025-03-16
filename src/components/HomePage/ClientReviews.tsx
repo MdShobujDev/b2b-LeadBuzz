@@ -10,21 +10,21 @@ import Image from "next/image";
 const clients = [
   {
     id: 1,
-    name: "Adamkosloff",
+    name: "Adam",
     review:
       "Once again, Lead Zahid delivers! Excited to test out this batch. Fingers crossed, we got a lot of connects, and then we can hopefully do this process on a more regular basis.",
     photo: adamkosloff,
   },
   {
     id: 2,
-    name: "Damiencarrier",
+    name: "Damien",
     review:
       "Zahid exceeded all expectations with his work on my project. His attention to detail, professionalism, and ability to follow instructions were exceptional. ",
     photo: damiencarrier,
   },
   {
     id: 3,
-    name: "Davidli",
+    name: "David",
 
     review:
       "Once again, Zahid delivers the goods quickly and with very little guidance required. Thank you, and I'm excited to use your services again in the near future.",
@@ -32,7 +32,7 @@ const clients = [
   },
   {
     id: 4,
-    name: "Theopascard",
+    name: "Theopas",
 
     review:
       "Zahid a fait du très bon travail, il est très professionnel et à l'écoute. Excellent rapport qualité - prix Je recommande.",
@@ -40,14 +40,14 @@ const clients = [
   },
   {
     id: 5,
-    name: "Clmentgilly",
+    name: "Clment",
     review:
       "Super quick data scrapping of exactly what I needed. Using Zahid's services now 5 times! And will be more.",
     photo: clmentgilly,
   },
   {
     id: 6,
-    name: "Jonah joy",
+    name: "Jonah",
     review:
       "Thanks, Zahid--lightning fast delivery, and you went above and beyond what I asked for in the order. Excited to test these out, and we'll see how it goes. I hope to come back to you for research orders in the future.",
     photo: jonah_joy,

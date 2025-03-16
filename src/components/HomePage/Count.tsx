@@ -23,7 +23,7 @@ function Count() {
             <div className="flex flex-col items-center bg-purple-50 py-8 rounded">
               <h2 className="sm:text-4xl text-3xl font-bold">
                 <CountUp
-                  end={100}
+                  end={500}
                   scrollSpyOnce
                   enableScrollSpy
                   duration={5}

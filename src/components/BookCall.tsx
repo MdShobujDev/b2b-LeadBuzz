@@ -22,7 +22,7 @@ const BookCall = () => {
         <span className=" sm:text-sm text-xs  font-medium">Book A Call</span>
       </button>
       <a
-        href="https://wa.me/+8801309919260?text=Hello,%20I%20am%20interested%20in%20your%20services"
+        href="https://wa.me/+8801732852745?text=Hello,%20I%20am%20interested%20in%20your%20services"
         target="_blank"
         className=" fixed bottom-1.5 z-30  right-5 flex items-center gap-2 text-white bg-purple-800 sm:p-3 p-2 rounded-md cursor-pointer"
       >
